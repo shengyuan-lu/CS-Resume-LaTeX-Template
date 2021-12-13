@@ -1,0 +1,216 @@
+ %-----------CS Resume Template                                        -----------
+ %-----------Based on "Jack's Resume" (by Jake Gutierrez, MIT License) -----------
+ %-----------Modified by Shengyuan Lu (MIT License)                    -----------
+ %-----------GitHub: https://github.com/shengyuan-lu                   -----------
+ %-----------Linkedin: https://www.linkedin.com/in/shengyuan-lu/       -----------
+  
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[super]{nth}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Steve J. Gates} \\ \vspace{7pt}
+    \small (123)456-789 $ | $ 
+    \href{mailto:steve.gates.career@snailmail.com}{\underline{steve.gates.career@snailmail.com}} $ | $ 
+    \href{https://www.I-am-Happy-To-Announce.com/s-gates}{\underline{\faLinkedin \hspace{1pt} I-am-Happy-To-Announce.com/s-gates}} $ | $
+    \href{https://cathub.com/steve-gates}{\underline{\faGithub \hspace{1pt} cathub.com/steve-gates}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {St. Anford University}{Expected Graduation Date: June 2022}
+      {Bachelor of Science, Asymbolic Systems and Gender Studies}{\textbf{Junior} $|$ GPA: \textbf{6.9}}
+  \resumeSubHeadingListEnd
+  
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Coffee, YellowBird, BigSnake, SegFault, Object Cat} \\
+     \textbf{Frameworks}{: FruitOSEqualsBest, NoOneLikesCurtainOS, ByteNotDacing, PieGames, ASUCB} \\
+     \textbf{Developer Tools}{: Ycode, Blind Studio Code, Green Robot Studio, Cat/CatHub, TestCrash, Icon Is A Vase} \\
+     \textbf{Spoken Languages}{: English (with heavy Chinese accent), Alienese} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Admission Officer}{September 2020 -- Present}
+      {St. Anford Office of Admission and Financial Aid}{Berkeley, California, United States}
+      \resumeItemListStart
+        \resumeItem{Randomly select \textbf{50,000} qualified applicants to reject each year unless the applicants is a legacy or pays millions to William Rick Singer.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Engineer Intern}{July 2021 -- September 2021}
+      {Some Big Scientist Name Company}{Mars, Solar system}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{long range rocket} that can send ants to Mars and cost as little as a house in Bay Area.}
+        \resumeItem{Tried every kind of snacks offered at the office, including \textbf{La Tiao} (Spicy Bar).}
+        \resumeItem{Finished \textbf{500} Leetcode questions while the manager was off duty.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CurtainOS Developer}{January 2019 -- Present}
+      {Self-Employed}{Blue Screen of Death}
+      \resumeItemListStart
+        \resumeItem{Fixed the \textbf{planet-wide} blackout caused by CurtainOS 8.}
+        \resumeItem{Developed CurtainOS 11 task bar and widget section by \textbf{copying} FruitOS X.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Leadership-----------
+\section{Leadership Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Co-Founder \& Team Lead}{January 2021 -- June 2021}
+      {St. Anford Admits (Hackathon Team)}{Palo Alto, California, United States}
+      \resumeItemListStart
+        \resumeItem{Copy other's code on \textbf{Stack Overflow} when encountering problems during hackathons.}
+        \resumeItem{Use existing frameworks and machine learning libraries but makes it look like I write everything from ground up.}
+        \resumeItem{Managed projects on \textbf{CatHub} during hackathons, messing up merge conflicts.}
+        \resumeItem{Published \textbf{project demo videos} that no one watches.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Personal Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://www.mindgeek.com/}{\faLink \hspace{1pt} \textbf{Auto Homework Coder}}\hspace{3pt}(FruitOS App) $|$ \emph{YellowBird, PieGames, ByteNotDacing}}{December 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Can automatically complete coding assignments for college students and \textbf{avoid MOSS} detection.}
+            \resumeItem{\textbf{Localized in 69 languages}, this app intends to reach a \textbf{global} community of struggling computer science majors.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://www.mindgeek.com/}{\faLink \hspace{1pt} \textbf{Crush or Not}}\hspace{3pt}(CurtainOS App) $|$ \emph{YellowBird, PieGames, ASUCB}}{April 2020}
+          \resumeItemListStart
+            \resumeItem{Use \textbf{state of art} machine learning, this app guesses if the person you like also likes you with \textbf{50\% accuracy}.}
+            \resumeItem{Players enter his or her personality and the target person's personality for the AI model to make a guess.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://www.mindgeek.com/}{\faLink \hspace{1pt} \textbf{College Rejection Simulator}}\hspace{3pt}(FruitOS Game) $|$ \emph{BigSnake, ASUCB, ByteNotDacing}}{March 2019}
+          \resumeItemListStart
+            \resumeItem{To avoid heart breaks, this game prepares \textbf{aspiring high school} students to embrace college rejections on \textbf{Ivy day}.}
+            \resumeItem{Implemented an \textbf{in-app purchase} system so students can access college acceptance simulator.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ 
+ %-----------Recent Awards-----------
+ \section{Recent Awards}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Nobel Prize Winner in Computer Science}\hspace{1pt} (1 of 50,000 selected worldwide) $|$ \emph{Nobel Prize Committee} \hspace*{\fill} October 2021 \\
+     \textbf{Hottest Guy in Frat}\hspace{1pt} (out of 300 guys) $|$ \emph{Girls in Frat} \hspace*{\fill} June 2021 \\
+     \textbf{LeetCode King}\hspace{1pt} (\nth{1} place overall out of 700 no-sleep majors) $|$ \emph{LeetCoding 4 Big G Jobs} \hspace*{\fill} April 2020 \\
+    }}
+ \end{itemize}
+ 
+%-------------------------------------------
+\end{document}
