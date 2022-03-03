@@ -1,4 +1,4 @@
-# Resume template for CS majors in North America
+## Shengyuan's Resume template for CS majors in North America
 
 #### *This is a LaTeX Template
 #### Original Author: Jake Gutierrez (MIT License)
